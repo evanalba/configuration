@@ -5,7 +5,7 @@
 set ai
 set nocompatible
 set encoding=utf-8
-set number 
+set number
 set title
 syntax off
 
@@ -19,7 +19,14 @@ hi Normal ctermfg=231
 
 " Show the line and column number of the cursor position
 set ruler
+set colorcolumn=80
 
 " Use the clipboard as the default register
 set clipboard+=unnamed
 
+" Line numbering
+set number relativenumber
+
+" Highlight trailing whitespaces
+highlight RedundantSpaces ctermbg=red guibg=red
+match RedundantSpaces /\s\+$/
