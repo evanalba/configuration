@@ -30,3 +30,15 @@ set number relativenumber
 " Highlight trailing whitespaces
 highlight RedundantSpaces ctermbg=red guibg=red
 match RedundantSpaces /\s\+$/
+
+" Unix Keyboard Shortcuts
+" ^U -> Delete from cursor to start of line.
+" ^W -> Delete word before the cursor.
+" ^H -> Delete character before the cursor.
+" ^A -> Move cursor to start of the line. (Not in included in Vim)
+" ^E -> Move cursor to end of the line. (Not in included in Vim)
+" (In Unix ‘^’ means the Control key.)
+imap <C-e> <esc>$i<right>
+imap <C-a> <esc>0i
+map <C-e> <esc>$<right>
+map <C-a> <esc>0
