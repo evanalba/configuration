@@ -42,3 +42,10 @@ imap <C-e> <esc>$i<right>
 imap <C-a> <esc>0i
 map <C-e> <esc>$<right>
 map <C-a> <esc>0
+
+" Specifies that a tab character should be treated as equivalent to 2 spaces.
+set tabstop=2
+" When you press the Tab key, Vim will insert the appropriate number of spaces
+" to maintain consistent indentation.
+set softtabstop=2
+
